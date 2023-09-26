@@ -32,21 +32,30 @@
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-quarter">
+    &nbsp; &nbsp; <p></p>
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="width-20">
+        Select a college
+      </label>
+      <!--<div id="subject-hint" class="govuk-hint">
+        This can be different to where you went before
+      </div>-->
+      <select class="govuk-select" id="width-20" id="subject" name="subject" aria-describedby="subject-hint">
+        <option value="choose" selected>All</option>
+        <option value="eastmidlands">Select none</option>
+        <option value="eastmidlands">Select all</option>
+        <option value="eastofengland">James Watt</option>
+        <option value="london">Matthew Boulton</option>
+        <option value="northeast">Stourbridge</option>
+        <option value="northwest">Sutton Coldfield</option>
+        <option value="southeast">South East</option>
+      </select>
+    </div>
     
 
-    
-
-<div class="govuk-form-group">
-  <label class="govuk-label" for="width-20">
-    Select a college
-  </label>
-  <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-</div>
 
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset">
-        
-
         <div class="govuk-checkboxes govuk-checkboxes--small">
           <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
@@ -73,15 +82,15 @@
     </div>
   </div>
   <div class="govuk-grid-column-three-quarters">  
-  &nbsp; &nbsp;
+  &nbsp; &nbsp; <h2 class="govuk-heading-m">Performance indicators</h2>
     <div class="govuk-grid-row tile-group">
 
       <div class="govuk-grid-column-one-half tile">
               <a class="grey min-height-small" href="#">
-                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Quality Achievement Rate (QAR)</span>
+                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Skills measure</span>
                   
               </a>
-              <div class="govuk-body warning-info-2">2022/23</div>
+              <div class="govuk-body warning-info-2">4.0%</div>
               <span id="ob1" class="govuk-body onboarding-info">
                   
                   
@@ -96,10 +105,10 @@
 
       <div class="govuk-grid-column-one-half tile">
               <a class="grey min-height-small" href="#">
-                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Quality Achievement Rate (QAR)</span> <br>
+                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Progression measure</span> <br>
                   <span class="govuk-body govuk-!-font-size-16"></span>
               </a>
-              <div class="govuk-body warning-info-2">2021/22</div>
+              <div class="govuk-body warning-info-2">77.0%</div>
               <span id="ob6" class="govuk-body onboarding-info">
                       <div class="arrow-up"></div>
                       <a class="close" href="#">Close</a>
@@ -111,10 +120,10 @@
 
           <div class="govuk-grid-column-one-half tile">
             <a class="grey min-height-small" href="#">
-                <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Quality Achievement Rate (QAR)</span>
+                <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Priority skills measure</span>
                 
             </a>
-            <div class="govuk-body warning-info-2">2020/21</div>
+            <div class="govuk-body warning-info-2">28.9%</div>
             <span id="ob1" class="govuk-body onboarding-info">
                 
                 
@@ -127,7 +136,7 @@
 
 
 
-    <div class="govuk-grid-column-one-half tile">
+    <!--<div class="govuk-grid-column-one-half tile">
             <a class="grey min-height-small" href="#">
                 <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Quality Achievement Rate (QAR)</span> <br>
                 <span class="govuk-body govuk-!-font-size-16"></span>
@@ -140,18 +149,20 @@
                      <br>
                     <a href="#" class="govuk-button govuk-!-margin-top-2 next6">Next</a> 
                 </span>
-        </div>
+        </div>-->
 
     </div>
-
+    <p></p>
+    &nbsp; &nbsp; <h2 class="govuk-heading-m">Achievement measures</h2>
     <div class="govuk-grid-row tile-group">
+      
 
       <div class="govuk-grid-column-one-half tile">
               <a class="grey min-height-small" href="#">
-                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Quality Achievement Rate (QAR)</span>
+                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Education and training</span>
                   
               </a>
-              <div class="govuk-body warning-info-2">2022/23</div>
+              <div class="govuk-body warning-info-2">80.3</div>
               <span id="ob1" class="govuk-body onboarding-info">
                   
                   
@@ -166,10 +177,10 @@
 
       <div class="govuk-grid-column-one-half tile">
               <a class="grey min-height-small" href="#">
-                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Quality Achievement Rate (QAR)</span> <br>
+                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Apprenticeships</span> <br>
                   <span class="govuk-body govuk-!-font-size-16"></span>
               </a>
-              <div class="govuk-body warning-info-2">2021/22</div>
+              <div class="govuk-body warning-info-2">60.7%</div>
               <span id="ob6" class="govuk-body onboarding-info">
                       <div class="arrow-up"></div>
                       <a class="close" href="#">Close</a>
@@ -179,40 +190,86 @@
                   </span>
           </div>
 
-          <div class="govuk-grid-column-one-half tile">
-            <a class="grey min-height-small" href="#">
-                <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Quality Achievement Rate (QAR)</span>
-                
-            </a>
-            <div class="govuk-body warning-info-2">2020/21</div>
-            <span id="ob1" class="govuk-body onboarding-info">
-                
-                
-               
-                 
-                <a href="#" class="govuk-button govuk-!-margin-top-2 next">Next</a> 
-            </span>
-        </div>
-
-
-
-
-    <div class="govuk-grid-column-one-half tile">
-            <a class="grey min-height-small" href="#">
-                <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Quality Achievement Rate (QAR)</span> <br>
-                <span class="govuk-body govuk-!-font-size-16"></span>
-            </a>
-            <div class="govuk-body warning-info-2">2018/19</div>
-            <span id="ob6" class="govuk-body onboarding-info">
-                    <div class="arrow-up"></div>
-                    <a class="close" href="#">Close</a>
-                    View reports
-                     <br>
-                    <a href="#" class="govuk-button govuk-!-margin-top-2 next6">Next</a> 
-                </span>
-        </div>
+          
 
     </div>
+
+    <p></p>
+    &nbsp; &nbsp; <h2 class="govuk-heading-m">English and maths</h2>
+    <div class="govuk-grid-row tile-group">
+      
+
+      <div class="govuk-grid-column-one-half tile">
+              <a class="grey min-height-small" href="#">
+                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">English 16-18</span>
+                  
+              </a>
+              <div class="govuk-body warning-info-2">-</div>
+              <span id="ob1" class="govuk-body onboarding-info">
+                  
+                  
+                 
+                   
+                  <a href="#" class="govuk-button govuk-!-margin-top-2 next">Next</a> 
+              </span>
+      </div>
+
+
+
+
+      <div class="govuk-grid-column-one-half tile">
+              <a class="grey min-height-small" href="#">
+                  <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">English 19+</span> <br>
+                  <span class="govuk-body govuk-!-font-size-16"></span>
+              </a>
+              <div class="govuk-body warning-info-2">81.9%</div>
+              <span id="ob6" class="govuk-body onboarding-info">
+                      <div class="arrow-up"></div>
+                      <a class="close" href="#">Close</a>
+                      View reports
+                       <br>
+                      <a href="#" class="govuk-button govuk-!-margin-top-2 next6">Next</a> 
+                  </span>
+      </div>
+
+      <div class="govuk-grid-column-one-half tile">
+        <a class="grey min-height-small" href="#">
+            <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Maths 16-18</span>
+            
+        </a>
+        <div class="govuk-body warning-info-2">-</div>
+        <span id="ob1" class="govuk-body onboarding-info">
+            
+            
+           
+             
+            <a href="#" class="govuk-button govuk-!-margin-top-2 next">Next</a> 
+        </span>
+</div>
+
+
+
+
+<div class="govuk-grid-column-one-half tile">
+        <a class="grey min-height-small" href="#">
+            <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Maths 19+</span> <br>
+            <span class="govuk-body govuk-!-font-size-16"></span>
+        </a>
+        <div class="govuk-body warning-info-2">88.3%</div>
+        <span id="ob6" class="govuk-body onboarding-info">
+                <div class="arrow-up"></div>
+                <a class="close" href="#">Close</a>
+                View reports
+                 <br>
+                <a href="#" class="govuk-button govuk-!-margin-top-2 next6">Next</a> 
+            </span>
+</div>
+
+          
+
+    </div>
+
+    
    
   
         </div>
