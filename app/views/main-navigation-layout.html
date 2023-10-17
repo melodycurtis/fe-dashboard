@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block beforeContent %}
+{{ appPrimaryNavigation({
+    visuallyHiddenTitle: "Navigation",
+    items: [{
+        text: "About this project",
+        href: "/briefing/about",
+        current: url === "/briefing/about"
+    }, {
+        text: "Contact us",
+        href: "/briefing/contact",
+        current: url === "/briefing/contact"
+    }]
+}, url) }}
+{% endblock %}

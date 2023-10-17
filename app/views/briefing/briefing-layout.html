@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block beforeContent %}
+{{ xGovukPrimaryNavigation({
+    visuallyHiddenTitle: "Navigation",
+    items: [
+    {
+        text: "Education and training",
+        href: "/briefing/dash",
+        current: url === "/briefing/dash"
+    }, 
+
+    {
+        text: "Summary",
+        href: "/briefing/summary",
+        current: url === "/briefing/summary"
+    }, 
+    
+    {
+        text: "Contact us",
+        href: "/briefing/contact",
+        current: url === "/briefing/contact"
+    }
+    
+    ]
+}) }}
+{% endblock %}
