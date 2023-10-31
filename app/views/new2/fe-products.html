@@ -1,0 +1,198 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Primary navigation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "/",
+    serviceName: serviceName,
+    serviceUrl: "/",
+    classes: "govuk-header__container--full-width",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block main %}
+  {{ xGovukPrimaryNavigation({
+    visuallyHiddenTitle: "Site navigation",
+    items: [{
+      text: "",
+      href: "#"
+    }, {
+      text: "",
+      href: "#"
+    }]
+  }) }}
+
+  <div class="govuk-width-container">
+    <main class="govuk-main-wrapper" id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds-from-desktop">
+            <p></p>
+          </div>
+          <div class="govuk-grid-column-one-third-from-desktop govuk-!-text-align-right">
+            <div class="govuk-form-group">
+            <label class="govuk-body govuk-!-font-size-24">
+              Choose a provider
+            </label>
+            <!--<div id="subject-hint" class="govuk-hint">
+              This can be different to where you went before
+            </div>-->
+            <select class="govuk-select" id="subject" name="subject" aria-describedby="subject-hint">
+              <option value="choose" selected>1st Care Training Limited</option>
+              <option value="eastmidlands">2 Sisters Food Limited</option>
+              <option value="eastofengland"> 2 Start Limited</option>
+              <option value="london">360 Recruitment Limited</option>
+              <option value="northeast">3 Spirit Training</option>
+              <option value="northwest">5 E Limited</option>
+              <option value="southeast">5 Stars Recruitment</option>
+              <option value="southwest">8 Point 8 Training</option>
+              <option value="westmidlands">ARC Academy UK Limited</option>
+              <option value="yorkshire">A S Training International Limited</option>
+              <option value="yorkshire">A W Jenkinson Transport Limited</option>
+            </select>
+          </div>
+          </div>
+        </div>
+        
+        
+        <div class="govuk-grid-column-full">
+          
+          <h1 class="govuk-heading-l">
+            Further education
+          </h1>
+
+         <br>
+
+          
+
+          <div class="govuk-grid-row tile-group">
+
+            <div class="govuk-grid-column-one-third tile">
+                    <a class="grey min-height-small" href="fe-dash.html">
+                        <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Dashboards</span>
+                        
+                    </a>
+                    <div class="govuk-body warning-info-2">Performance data </div>
+                    <span id="ob1" class="govuk-body onboarding-info">
+                        <div class="arrow-up"></div>
+                        <a class="close" href="#">Close</a>
+                        lorem ipsum
+                         <br>
+                        <a href="#" class="govuk-button govuk-!-margin-top-2 next">Next</a> 
+                    </span>
+                </div>
+
+
+
+
+            <div class="govuk-grid-column-one-third tile">
+                    <a class="grey min-height-small" href="families">
+                        <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Download the data</span> <br>
+                        <span class="govuk-body govuk-!-font-size-16"></span>
+                    </a>
+                    <div class="govuk-body warning-info-2">Download data zip files</div>
+                    <span id="ob6" class="govuk-body onboarding-info">
+                            <div class="arrow-up"></div>
+                            <a class="close" href="#">Close</a>
+                            lorem ipsum
+                             <br>
+                            <a href="#" class="govuk-button govuk-!-margin-top-2 next6">Next</a> 
+                        </span>
+                </div>
+
+
+            <div class="govuk-grid-column-one-third tile">
+                <a class="grey min-height-small" href="#">
+                    <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Guidance links</span> <br>
+                    <span class="govuk-body govuk-!-font-size-16"> </span>
+                </a>
+                <div class="govuk-body warning-info-2">Check how data is calculated</div>
+                <span id="ob4" class="govuk-body onboarding-info">
+                        <div class="arrow-up"></div>
+                        <a class="close" href="#">Close</a>
+                        View 13 reports
+                         <br>
+                        <a href="#" class="govuk-button govuk-!-margin-top-2 next4">Next</a> 
+                    </span>
+            </div>
+
+             <div class="govuk-grid-column-one-third tile">
+                <a class="grey min-height-small" href="#">
+                    <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Data self service</span> <br>
+                  <span class="govuk-body govuk-!-font-size-16"></span> 
+                    
+                </a>
+                <div class="govuk-body warning-info-2">Choose data to analyse</div>
+                <span id="ob5" class="govuk-body onboarding-info">
+                        <div class="arrow-up"></div>
+                        <a class="close" href="#">Close</a>
+                        
+                         <br>
+                        <a href="#" class="govuk-button govuk-!-margin-top-2 next5">Next</a> 
+                    </span>
+            </div>
+
+           <!--<div class="govuk-grid-column-one-third tile">
+                <a class="grey min-height-small" href="schools">
+                    <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Region</span> <br>
+                    <span class="govuk-body govuk-!-font-size-16"></span>
+                </a>
+                <div class="govuk-body warning-info-2">BAME</div>
+                <span id="ob6" class="govuk-body onboarding-info">
+                        <div class="arrow-up"></div>
+                        <a class="close" href="#">Close</a>
+                        View reports
+                         <br>
+                        <a href="#" class="govuk-button govuk-!-margin-top-2 next6">Next</a> 
+                    </span>
+            </div>
+
+            <div class="govuk-grid-column-one-third tile">
+                <a class="grey min-height-small" href="#">
+                    <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Comparisons</span> <br>
+                    <span class="govuk-body govuk-!-font-size-16"> </span>
+                </a>
+                <div class="govuk-body warning-info-2">Compare your performance</div>
+                <span id="ob4" class="govuk-body onboarding-info">
+                        <div class="arrow-up"></div>
+                        <a class="close" href="#">Close</a>
+                        Lorem ipsum
+                         <br>
+                        <a href="#" class="govuk-button govuk-!-margin-top-2 next4">Next</a> 
+                    </span>
+            </div>
+
+          <div class="govuk-grid-column-one-third tile">
+                <a class="grey min-height-small" href="strategy">
+                    <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Other</span> <br>
+                    <span class="govuk-body govuk-!-font-size-16"> </span>
+                </a>
+                <div class="govuk-body warning-info-2">Sources, definitions and links</div>
+                <span id="ob1" class="govuk-body onboarding-info">
+                    <div class="arrow-up"></div>
+                    <a class="close" href="#">Close</a>
+                    View reports 
+                     <br>
+                    <a href="#" class="govuk-button govuk-!-margin-top-2 next">Next</a> 
+                </span>
+            </div>-->
+
+
+    
+
+    </div>
+        </div>
+      </div>
+    </main>
+  </div>
+{% endblock %}

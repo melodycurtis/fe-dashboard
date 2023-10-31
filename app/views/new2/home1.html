@@ -1,0 +1,126 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Primary navigation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "/",
+    serviceName: serviceName,
+    serviceUrl: "/",
+    classes: "govuk-header__container--full-width",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block main %}
+  {{ xGovukPrimaryNavigation({
+    visuallyHiddenTitle: "Site navigation",
+    items: [{
+      text: "Page 1",
+      href: "#"
+    }, {
+      text: "Page 2",
+      href: "#"
+    }]
+  }) }}
+
+  <div class="govuk-width-container">
+    {{ govukBackLink({
+      href: "javascript:window.history.back()"
+    }) }}
+
+    <main class="govuk-main-wrapper" id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <h1 class="govuk-heading-l">
+            View your education data
+          </h1>
+
+          
+
+          <div class="govuk-grid-row tile-group">
+
+            <div class="govuk-grid-column-one-third tile">
+                <a class="min-height" href="#" target="_blank">
+                    <span class="govuk-heading-m heading">Academies and schools </span>
+                    <span class="govuk-heading govuk-!-font-size-16">Lorem</span>
+                </a>
+                
+
+            </div>
+
+            
+ 
+            <div class="govuk-grid-column-one-third tile">
+                <a class="min-height" href="acheivement-rates">
+                    <span class="govuk-heading-m heading">Childrens services</span>
+                    <span class="govuk-heading govuk-!-font-size-16">Lorem</span>
+                </a>
+                
+            </div>
+
+            <div class="govuk-grid-column-one-third tile">
+                <a class="min-height" href="fe-products">
+                    <span class="govuk-heading-m heading">Further education</span>
+                    <span class="govuk-heading govuk-!-font-size-16">Details</span>
+                </a>
+                
+            </div>
+            <div class="govuk-grid-column-one-third tile">
+                <a class="min-height" href="#" target="_blank">
+                    <span class="govuk-heading-m heading">Childrens services</span>
+                    <span class="govuk-heading govuk-!-font-size-16">Details</span>
+                </a>
+                
+
+            </div>
+
+            
+ 
+            <div class="govuk-grid-column-one-third tile">
+                <a class="min-height" href="#" target="_blank">
+                    <span class="govuk-heading-m heading">Data quality</span>
+                    <span class="govuk-heading govuk-!-font-size-16">Details </span>
+                </a>
+                
+            </div>
+
+            <div class="govuk-grid-column-one-third tile">
+                <a class="min-height" href="#" target="_blank">
+                    <span class="govuk-heading-m heading">Future skills</span>
+                    <span class="govuk-heading govuk-!-font-size-16">Details</span>
+                </a>
+                
+            </div>
+
+             <!--<div class="govuk-grid-column-one-third tile">
+                <a class="min-height" href="#">
+                    <span class="govuk-heading-m heading">Future skills</span>
+                    <span class="govuk-heading govuk-!-font-size-16">Details</span>
+                </a>
+            </div>
+
+            <div class="govuk-grid-column-one-third tile">
+                <a class="min-height" href="#">
+                    <span class="govuk-heading-m heading">Future skills</span>
+                    <span class="govuk-heading govuk-!-font-size-16">Details</span>
+                </a>
+                
+
+            </div>-->
+        </div>
+
+    </div>
+        </div>
+      </div>
+    </main>
+  </div>
+{% endblock %}
