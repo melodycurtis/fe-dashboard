@@ -1,0 +1,163 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Primary navigation page template - {{ serviceName }} - GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "/",
+    serviceName: serviceName,
+    serviceUrl: "/",
+    classes: "govuk-header__container--full-width",
+    containerClasses: "govuk-width-container"
+  }) }}
+{% endblock %}
+
+{% block main %}
+  {{ xGovukPrimaryNavigation({
+    visuallyHiddenTitle: "Site navigation",
+    items: [{
+      text: "Apprenticeships",
+      href: "apprenticeships"
+    }, {
+      text: "Education and training",
+      href: "education"
+    },{
+      text: "Traineeships",
+      href: "traineeships"
+    }]
+  }) }}
+
+  <div class="govuk-width-container">
+    <!--{{ govukBackLink({
+      href: "javascript:window.history.back()"
+    }) }}-->
+
+    <main class="govuk-main-wrapper" id="main-content" role="main">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter">
+          
+          <br><br><br><br><br><br>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <div>
+                <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                  <a href="achievement-rate" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Achievement rate</a>
+                </h3>
+                
+                {{ xGovukSubNavigation({
+                  visuallyHiddenTitle: "Navigation",
+                  items: [{
+                    text: "Achievement rate",
+                    href: "/achievement-rate",
+                    current: true,
+                    parent: true,
+                    children: [{
+                      text: "Something",
+                      href: "/contact/email"
+                    }, {
+                      text: "Something",
+                      href: "/contact/telephone"
+                    }]
+                  }]
+                }) }}
+                <div>
+                  <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                    <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Retention rate</a>
+                  </h3>
+                </div>
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Pass rate</a>
+                    </h3>
+                  </div>
+
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Aims</a>
+                    </h3>
+                  </div>
+
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Exclusions</a>
+                    </h3>
+                  </div>
+
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Withdrawals</a>
+                    </h3>
+                  </div>
+
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Breaks in learning</a>
+                    </h3>
+                  </div>
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Past planned end date</a>
+                    </h3>
+                  </div>
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Demographics</a>
+                    </h3>
+                  </div>
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Campus</a>
+                    </h3>
+                  </div>
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Subcontractors</a>
+                    </h3>
+                  </div>
+                  <div>
+                    <h3 class="govuk-heading-s govuk-!-margin-bottom-2">
+                      <a href="#" class="govuk-link govuk-link--no-underline govuk-link--no-visited-state">Employer feedback</a>
+                    </h3>
+                  </div>
+      
+              </div>
+            </fieldset>
+          </div></div>
+        <div class="govuk-grid-column-three-quarters">
+          <span class="govuk-caption-l">1st Care Training Limited</span>
+          <h1 class="govuk-heading-l">
+            Apprenticeships
+          </h1>
+
+          <br>
+          
+          <p>Guidance on how the apprenticeships measures are calculated. Aenean massa.
+            <br> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <br>
+            <br>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+            <br>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. 
+            <p><STRONG>Check the 
+              <a href="https://www.gov.uk/government/publications/apprenticeship-training-provider-accountability-framework/apprenticeship-training-provider-accountability-framework-and-specification#indicators-we-use-to-review-providers" class="govuk-link" target="_blank">indicators we use to review apprenticeship providers </a></STRONG></p>
+    
+         
+          <br>
+
+          
+
+
+    </div>
+        </div>
+
+    </div>
+        </div>
+      </div>
+    </main>
+  </div>
+{% endblock %}
